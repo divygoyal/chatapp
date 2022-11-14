@@ -1,0 +1,240 @@
+/* @mixin mobile{
+    @media screen and (max-width:480px){
+        @content;
+    }
+}
+@mixin Tablet{
+    @media screen and (max-width:768px){
+        @content;
+    }
+}
+@mixin Laptop{
+    @media screen and (max-width:1200px){
+        @content;
+    }
+} */
+.formcontainer{
+    background-color:#a7bcff;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    
+}
+   .formwrapper{
+    background-color: white;
+    padding: 5px 60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+   }
+   .logo{
+    color: #724fd3;
+    font-weight: bold;
+    font-size: 40px;
+   }
+   .input{
+    
+    width: 251px;
+    padding: 5px ;
+    outline: none;
+    border: none;
+    border-bottom: #d7c9ff 1px solid;
+    font-size:15px;
+    color: #724fd3;
+    
+   }
+    .form{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        
+    }
+    .button{
+        background-color:#d7c9ff;
+        padding: 10px;
+        font-weight: bold;
+        color: antiquewhite;
+        cursor: pointer;
+    }
+    .label{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .home{
+        background-color: #a7bcff;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+   .container{
+    border:1px solid white;
+    border-radius: 10px;
+    width: 65%;
+    height: 80%;
+    display: flex;
+    overflow: hidden;
+   
+   }
+   
+   .Sidebar{
+    flex: 1;
+    background-color: #3e3c61;
+    border-right: 2px solid black;
+   }
+   .Chat{
+    flex: 2;
+
+}
+.Navbar{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: #2f2d52;
+    color: #ddddf7;
+}
+.user{
+    display: flex;
+    gap: 10px;
+}
+.userchat{
+    color:white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+    }
+.userchat:hover{
+    background-color: #2f2d52;
+}
+ .userchatinfo span{
+        padding-left: 10px;
+        font-size: 18px;
+        font-weight: 500;
+ }
+ .userchat p{
+    margin: 1px;
+    padding-left: 10px;
+    font-size: 14px ;
+    color: lightgrey;
+ }
+ .chatinfo{
+    display: flex;
+    align-items: center;
+    background-color: #5d5b8d;
+    height: 50px;
+    padding: 10px;
+    color: lightgray;
+    justify-content: space-between;
+ }
+ .chatinfo img{
+    height: 24px;
+    cursor: pointer;
+ }
+ .Messages{
+    background-color: #ddddf7;
+    padding: 10px;
+    height: calc(100% - 160px);
+    /* overflow: scroll; */
+    overflow-y: scroll;
+    
+ }
+ .Messages::-webkit-scrollbar{
+    display: none;
+ }
+ .Input{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    height:50px;
+    background-color: aliceblue;
+
+ }
+ .Input img{
+    height: 24px;
+    cursor: pointer;
+ }
+ .Input input{
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #2f2d52;
+    background-color: aliceblue;
+ }
+ .send{
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+ }
+ .send button{
+    background-color: #a7bcff;
+    border: none;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+ }
+ .Message{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+    
+ }
+ 
+ .messageinfo img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+ }
+ .messageinfo{
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    color: gray;
+ }
+ .messagecontent{
+    display: flex;
+    gap: 10px;
+    max-width: 80%;
+    
+    flex-direction: column;
+ }
+ .messagecontent img{
+    width: 50%;
+ }
+ .messagecontent p{
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 0px 10px 10px 10px;
+ }
+
+.Message.owner{
+    flex-direction: row-reverse;
+}
+.Message.owner p{
+    background-color: #8da4f1;
+    color: whitesmoke;
+    font-weight: 400;
+    border-radius: 10px 0 10px 10px;
+    width: max-content;
+}
+.Message.owner .messagecontent{
+    align-items: flex-end;
+}
